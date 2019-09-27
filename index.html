@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> Awesome color palette generator </title>
+	<script src="script.js"></script>
+	<script src="colors.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+	<!-- Load the latest version -->
+	<link rel="stylesheet" href="https://unpkg.com/@clr/ui/clr-ui.min.css" />
+	<link rel="stylesheet" href="https://unpkg.com/@clr/icons@0.13.4/clr-icons.min.css" />
+	<link href="styles.css" type="text/css" rel="stylesheet">
+
+</head>
+
+<body onload="init()">
+	<script src="https://unpkg.com/@clr/icons@0.13.4/clr-icons.min.js"></script>
+	<!--<div id="colors-viewer">
+		
+
+		<div id="color1" class="color-view">
+			Fondo p&aacute;gina
+		</div>
+
+		<div id="color2" class="color-view">
+			Texto elementos
+		</div>
+
+		<div id="color3" class="color-view">
+			Borde elementos
+		</div>
+
+		<div id="color4" class="color-view">
+			Fondo elementos
+		</div>
+
+		<div id="color5" class="color-view">
+			Texto encabezado
+		</div>
+	</div>
+
+
+	<div id="css-rules-div">
+		<h2> Reglas CSS</h2>
+		<textarea id="css-rules" class="rules">
+.website-background{ color: #FFFFFF;}
+
+.element-text{ color: #FFFFFF;}
+
+.element-border{ border-color: #FFFFFF;}
+
+.element-background{ background-color: #FFFFFF;}
+
+.header{ color: #FFFFFF;}
+			</textarea>
+	</div>
+
+
+	<div id="actions">
+		<button> Generar nueva paleta</button>
+		<button> Limpiar paleta</button>
+	</div>-->
+
+	<div class="main-container">
+		<header class="header-5">
+			<div class="branding">
+				<a href="javascript://" class="nav-link">
+					<span style="color: white">
+						<clr-icon shape="paint-roller"></clr-icon>
+					</span>
+					<span class="title">Color Palette Generator</span>
+				</a>
+			</div>
+			<div class="header-actions">
+			</div>
+		</header>
+
+		<div class="content-container">
+			<div class="content-area">
+				<h2> Paleta de colores </h2>
+				<div class="clr-row">
+					<div class="clr-col">
+						<div class="color-label" id="website-background">Fondo p&aacute;gina</div>
+					</div>
+					<div class="clr-col">
+						<div class="color-label" id="element-text">Texto elementos</div>
+					</div>
+					<div class="clr-col">
+						<div class="color-label" id="element-border">Borde elementos</div>
+					</div>
+					<div class="clr-col">
+						<div class="color-label" id="element-background">Fondo elementos</div>
+					</div>
+					<div class="clr-col">
+						<div class="color-label" id="header">Texto encabezado</div>
+					</div>
+				</div>
+				<h2> Reglas CSS </h2>
+				<div class="clr-row">
+					<div class="clr-col-md-6 clr-col-12 ">
+						<textarea id="css-rules" class="rules">.website-background{ color: #FFFFFF;}
+.element-text{ color: #FFFFFF;}
+.element-border{ border-color: #FFFFFF;}
+.element-background{ background-color: #FFFFFF;}
+.header{ color: #FFFFFF;}
+											</textarea>
+					</div>
+				</div>
+				<div class="clr-row">
+					<div class="clr-col-md-6 clr-col-12" style="text-align: right">
+						<button class="btn btn-danger-outline" onclick="clearPalette()">Limpiar paleta</button>
+						<button class="btn btn-primary" onclick="generateRules()">Generar nueva paleta</button>
+					</div>
+					<div class="clr-col">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+
+</html>
